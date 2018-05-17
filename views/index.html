@@ -1,0 +1,26 @@
+<% include layout/header.html%>
+
+
+<!-- 内容部分 -->
+
+
+<% include layout/javascript.html%>
+
+<script>
+    layui.use(['layer', 'form'], function () {
+        var layer = layui.layer
+            , form = layui.form;
+
+        layer.msg($(window).height() + 'Hello World');
+    });
+    layui.use('element', function () {
+        var element = layui.element;
+
+        //一些事件监听
+        element.on('nav(header)', function (data) {
+            // console.log(data);
+        });
+    });
+</script>
+
+<% include layout/footer.html%>

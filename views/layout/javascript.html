@@ -1,0 +1,15 @@
+<script src="<%- static_url('/js/layui/layui.js') %>"></script>
+<script src="<%- static_url('/js/jquery.min.js') %>"></script>
+<script src="<%- static_url('/js/jquery.cookie.js') %>"></script>
+<script>
+    function _locale_(key) {
+        $.cookie('locale', key, {
+            expires: 3650
+        });
+
+        setTimeout(function () {
+            window.location.reload();
+        }, 10);
+    }
+
+</script>

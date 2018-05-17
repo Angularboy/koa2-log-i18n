@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (hsz.mobi)
+/package-lock.json
+/node_modules/
+.idea/inspectionProfiles/
+.idea/koa2-log-i18n.iml
+.idea/modules.xml
+.idea/workspace.xml
+.idea/vcs.xml
+/logs/
